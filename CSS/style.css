@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(150deg, #6c3483, #58d68d);
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.formulario h1 {
+    font-family:montserrat;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form {
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+form .username,
+form .contrasena {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input,
+.contrasena input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label,
+.contrasena label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: gray;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.username input:focus ~ label,
+.username input:valid ~ label,
+.contrasena input:focus ~ label,
+.contrasena input:valid ~ label {
+    top: -5px;
+    color: #6c3483;
+    font-size: 12px;
+}
+.username,
+.contrasena{
+    position: relative;
+}
+
+.username i,
+.contrasena i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c3483;
+    font-size: 18px;
+}
+.recordar {
+    margin: -5px 0 20px 5px;
+    color: #6c3483;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #6c3483;
+    background: #6c3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #4a235a;
+    transition: 0.3s;
+}
+
+.registrarse {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.registrarse a {
+    color: #6c3483;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lando">
+    <meta name="robots" content="noindex, nofollow">
+    <title>LogiSystem</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Multimedia/logisticaIcon.png" type="image/png">
+</head>
+<body>
+    <div class="formulario">
+        <h1>LogiSystem</h1>
+
+        <form id="login" method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Correo de usuario</label>
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+
+            <div class="contrasena">
+                <input type="password" required>
+                <label>Contraseña</label>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+
+            <div class="recordar">
+                ¿Olvidó su contraseña?
+            </div>
+
+            <input type="submit" value="Iniciar">
+            <p id="mensaje"></p>
+        </form>
+    </div>
+    
+    <script src="JS/script.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

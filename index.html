@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Envíos - LogiSystem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <div>
+                <div class="logo">
+                    <h2>LogiSystem</h2>
+                    <p>logística</p>
+                </div>
+
+                <nav class="menu">
+                    <a href="dashboard.html" class="menu-item">Dashboard</a>
+                    
+                </nav>
+            </div>
+
+            <div class="logout-area">
+                    <a href="Login.html" class="btn-logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                    Cerrar sesión
+                </a>
+            </div>
+        </aside>
+
+        <main class="contenido">
+            <div class="panel-envios">
+                <h1>Gestión de Envíos</h1>
+
+                <form class="formulario-envio">
+                    <div class="grupo-formulario">
+                        <label for="codigoEnvio">Código de envío</label>
+                        <input type="text" id="codigoEnvio" name="codigoEnvio" placeholder="Ej: 001234">
+                    </div>
+
+                    <div class="fila">
+                        <div class="grupo-formulario">
+                            <label for="origen">Origen</label>
+                            <select id="origen" name="origen">
+                                <option value="">Seleccione origen</option>
+                                <option>Arica</option>
+                                <option>Iquique</option>
+                                <option>Antofagasta</option>
+                                <option>Copiapo</option>
+                                <option>La Serena</option>
+                                <option>Santiago</option>
+                                <option>Valparaíso</option>
+                                <option>Rancagua</option>
+                                <option>Talca</option>
+                                <option>Concepción</option>
+                                <option>Temuco</option>
+                                <option>Valdivia</option>
+                                <option>Osorno</option>
+                                <option>Puerto Montt</option>
+                                <option>Coyhaique</option>
+                                <option>Punta Arenas</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="destino">Destino</label>
+                            <select id="destino" name="destino">
+                                <option value="">Seleccione destino</option>
+                                <option>Arica</option>
+                                <option>Iquique</option>
+                                <option>Antofagasta</option>
+                                <option>Copiapo</option>
+                                <option>La Serena</option>
+                                <option>Santiago</option>
+                                <option>Valparaíso</option>
+                                <option>Rancagua</option>
+                                <option>Talca</option>
+                                <option>Concepción</option>
+                                <option>Temuco</option>
+                                <option>Valdivia</option>
+                                <option>Osorno</option>
+                                <option>Puerto Montt</option>
+                                <option>Coyhaique</option>
+                                <option>Punta Arenas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="grupo-formulario">
+                            <label for="fechaSalida">Fecha de salida</label>
+                            <input type="date" id="fechaSalida" name="fechaSalida">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="fechaArribo">Fecha de arribo - ETA</label>
+                            <input type="date" id="fechaArribo" name="fechaArribo">
+                        </div>
+                    </div>
+
+                    <div class="fila">
+                        <div class="grupo-formulario">
+                            <label for="estadoEnvio">Estado del envío</label>
+                            <select id="estadoEnvio" name="estadoEnvio">
+                                <option value="">Seleccione estado</option>
+                                <option>Programado</option>
+                                <option>En tránsito</option>
+                                <option>Entregado</option>
+                                <option>Cancelado</option>
+                                <option>Cerrado</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="responsable">Responsable</label>
+                            <input type="text" id="responsable" name="responsable" placeholder="Nombre del encargado">
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Ingrese detalles adicionales del envío..."></textarea>
+                    </div>
+
+                    <div class="botones">
+                        <button type="submit" class="btn-aceptar">Aceptar envío</button>
+                        <button type="reset" class="btn-cancelar">Cancelar envío</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

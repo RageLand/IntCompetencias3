@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(150deg, #6c3483, #58d68d);
+    min-height: 100vh;
+    color: #333;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR BLANCO */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #6c3483;
+}
+
+.logo p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* MENU */
+.menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #444;
+    padding: 14px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    background-color: rgba(108, 52, 131, 0.1);
+    color: #6c3483;
+}
+
+.menu-item.activo {
+    background-color: #6c3483;
+    color: white;
+}
+
+/* CONTENIDO */
+.contenido {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* TARJETA PRINCIPAL */
+.panel-envios {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.panel-envios h1 {
+    margin: 0;
+    text-align: center;
+    color: #6c3483;
+    font-size: 32px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* FORMULARIO */
+.formulario-envio {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grupo-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-formulario label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    border-color: #6c3483;
+    box-shadow: 0 0 0 3px rgba(108, 52, 131, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-aceptar,
+.btn-cancelar {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-aceptar {
+    background-color: #6c3483;
+    color: white;
+}
+
+.btn-aceptar:hover {
+    background-color: #582c6d;
+}
+
+.btn-cancelar {
+    background-color: #58d68d;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background-color: #43b874;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .btn-aceptar,
+    .btn-cancelar {
+        width: 100%;
+    }
+}
+.logout-area {
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.usuario-info i {
+    font-size: 24px;
+    color: #6c3483;
+}
+
+.btn-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    background-color: #58d68d;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #43b874;
+}
